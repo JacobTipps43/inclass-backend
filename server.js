@@ -86,6 +86,10 @@ app.get("/api/house_plans", (req, res) => {
   res.json(housePlans);
 });
 
+app.post("/api/house_plans", upload.single("image"), (req, res) => {
+  
+});
+
 app.listen(3003, () => {
   console.log("Listening....");
 });
